@@ -64,13 +64,28 @@ Here are a few examples. You can try and recreate these, or come up with your ow
 - Age as size - Passengers below 18 years are smaller
 - Survived - Caualties are show with opacity 50%
 
-![Example 1](titanic-age-survived-embarked-sex.png)
+**Example 2:** 
+
+![Example 2](titanic-age-survived-embarked-sex.png)
 
 - All passengers 
 - Gender as shape - female passengers have `borderRadius` 50%
 - Age as size - Passengers below 18 years are smaller
 - Survived - Caualties are show with opacity 50%
 - Embarked as background color - S = Red, Q = Blue, C = Gold
+
+**Example 3:** 
+
+![Example 3](titanic-age-sex-embarked-survived-pclass.png)
+
+- All passengers 
+- Gender as shape - female passengers have `borderRadius` 50%
+- Age as size - Passengers below 18 years are smaller
+- Survived - Caualties are show with opacity 50%
+- Embarked as background color - S = Red, Q = Blue, C = Gold
+- pclass - All first class passengers have a border
+
+
 
 ## What will you turn in?
 
