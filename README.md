@@ -106,6 +106,8 @@ Here are a few examples. You can try and recreate these, or come up with your ow
 
 Here I created two separate groups by filtering the data on gender. Men are on the left and women are on the right. 
 
+Think about ways you can express different ideas and tell a story about what happened by displaying subsets or groups of data. 
+
 
 
 ## What will you turn in?
