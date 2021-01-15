@@ -53,7 +53,16 @@ Use these CSS properties to express the ideas above:
 
 ## What might it look like? 
 
+Here are a few examples. You can try and recreate these, or come up with your own variations.
 
+**Example 1:** 
+
+![Example 1](Titanic-Sex-Survived-age.png)
+
+- All passengers 
+- Gender as color - red or blue
+- Age as size - Passengers below 18 years are smaller
+- Gender as shape - female passengers have `borderRadius` 50%
 
 ## What will you turn in?
 
