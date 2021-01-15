@@ -63,6 +63,7 @@ Here are a few examples. You can try and recreate these, or come up with your ow
 - Gender as color - red or blue
 - Age as size - Passengers below 18 years are smaller
 - Gender as shape - female passengers have `borderRadius` 50%
+- Survived - Caualties are show with opacity 50%
 
 ## What will you turn in?
 
