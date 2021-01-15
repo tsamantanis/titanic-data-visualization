@@ -51,6 +51,21 @@ Use these CSS properties to express the ideas above:
 - border radius
 - border width, color, and style
 
+Use sort to organize the data. You can sort on: 
+
+- Age
+- Fare
+- pclass
+- gender/sex
+- embarked
+
+Use filter to break up the data and show a subset of the data. You can filter on: 
+
+- gender/sex
+- pclass
+- fare
+- age
+
 ## What might it look like? 
 
 Here are a few examples. You can try and recreate these, or come up with your own variations.
