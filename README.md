@@ -129,6 +129,12 @@ Think about ways you can express different ideas and tell a story about what hap
 
 Here are three separate groups where passengers have been filtered on their port of embarkation. Southampton on the left, Cherbourg in the center, and Queenstown on the right. 
 
+**Example 6:** 
+
+![Example 6](titanic-all.png)
+
+This example shows all of the examples above. The first row shows passengers by embarkation. The second row shows passengers by gender. Men in the first column, women in the second column and all passengers in the last. 
+
 ## What will you turn in?
 
 Post a link to the GitHub repo containing your work to [GradeScope](https://www.gradescope.com/courses/218919). 
