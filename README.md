@@ -104,7 +104,7 @@ Here are a few examples. You can try and recreate these, or come up with your ow
 
 ![Example 5](titanic-sort-men-women.png)
 
-Here I created two separate groups by filtering the data on gender. 
+Here I created two separate groups by filtering the data on gender. Men are on the left and women are on the right. 
 
 
 
