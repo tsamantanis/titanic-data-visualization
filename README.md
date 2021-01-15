@@ -57,13 +57,20 @@ Here are a few examples. You can try and recreate these, or come up with your ow
 
 **Example 1:** 
 
-![Example 1](Titanic-Sex-Survived-age.png)
+![Example 1](titanic-age-survived-sex.png)
 
 - All passengers 
 - Gender as color - red or blue
 - Age as size - Passengers below 18 years are smaller
-- Gender as shape - female passengers have `borderRadius` 50%
 - Survived - Caualties are show with opacity 50%
+
+![Example 1](titanic-age-survived-embarked-sex.png)
+
+- All passengers 
+- Gender as shape - female passengers have `borderRadius` 50%
+- Age as size - Passengers below 18 years are smaller
+- Survived - Caualties are show with opacity 50%
+- Embarked as background color - S = Red, Q = Blue, C = Gold
 
 ## What will you turn in?
 
