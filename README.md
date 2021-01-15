@@ -100,6 +100,14 @@ Here are a few examples. You can try and recreate these, or come up with your ow
 - Embarked as background color - S = Red, Q = Blue, C = Gold
 - pclass - All first class passengers have a border
 
+**Example 5:** 
+
+![Example 5](titanic-sort-men-women.png)
+
+Here I created two separate groups by filtering the data on gender. 
+
+
+
 ## What will you turn in?
 
 Post a link to the GitHub repo containing your work to [GradeScope](https://www.gradescope.com/courses/218919). 
