@@ -51,6 +51,10 @@ Use these CSS properties to express the ideas above:
 - border radius
 - border width, color, and style
 
+## What might it look like? 
+
+
+
 ## What will you turn in?
 
 Post a link to the GitHub repo containing your work to [GradeScope](https://www.gradescope.com/courses/218919). 
