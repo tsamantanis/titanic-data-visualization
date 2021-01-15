@@ -10,9 +10,11 @@ The goal of this assignment is display the Titanic data. In the previous assignm
 
 ## Learning Objectives
 
-- Create HTML element with JS
-- Style HTML element with JS
-- Use array methods to control the display of elements
+- Create HTML element with JS based on data
+- Style HTML element with JS based on data
+- Organized data to tell a story and/or reveal meaning
+- Use Array.sort() to sort data
+- Use Array.filter() to filter data
 
 ## Submission
 
