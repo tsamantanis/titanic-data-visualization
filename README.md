@@ -108,7 +108,11 @@ Here I created two separate groups by filtering the data on gender. Men are on t
 
 Think about ways you can express different ideas and tell a story about what happened by displaying subsets or groups of data. 
 
+**Example 6:** 
 
+![Example 6](titanic-filtered-embarked.png)
+
+Here are three separate groups where passengers have been filtered on their port of embarkation. Southampton on the left, Cherbourg in the center, and Queenstown on the right. 
 
 ## What will you turn in?
 
