@@ -92,7 +92,10 @@ Here are a few examples. You can try and recreate these, or come up with your ow
   - emabrked
   - survived
 - Gender as shape - female passengers borderRadius 50%
-- Age as size - Passengers below 18 years are smaller
+- Age as size -
+  - Less than 10 years 5px
+  - Less than 18 Years 8px
+  - 18 years and over 10px
 - Survived - Caualties are show with opacity 50%
 - Embarked as background color - S = Red, Q = Blue, C = Gold
 - pclass - All first class passengers have a border
