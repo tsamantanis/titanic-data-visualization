@@ -1,1 +1,39 @@
+html, body {
+    background: #181818;
+}
+#titanic {
+    display: grid;
+    grid-template-columns: repeat(33, 15px);
+    grid-gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
 
+#titanic div {
+    width: 15px;
+    height: 15px;
+}
+
+.male {
+    border-radius: 0;
+}
+
+.female {
+    border-radius: 50%;
+}
+
+.dead {
+    opacity: 0.5;
+}
+
+.S {
+    background: hsla(197, 100%, 63%, 1);
+}
+
+.C {
+    background: hsla(333, 100%, 53%, 1);
+}
+
+.Q {
+    background: hsla(136, 48%, 54%, 1);
+}
