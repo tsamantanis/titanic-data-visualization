@@ -16,6 +16,7 @@ passengers.forEach(p => {
 // Let's loop over each passenger and set some styles 
 passengers.forEach((p, i) => {
   p.classList.add(data[i].fields.embarked)
+  p.classList.add(data[i].fields.sex)
   if (data[i].fields.survived === "No") p.classList.add("dead")
 })
 
@@ -24,10 +25,6 @@ passengers.forEach((p, i) => {
 
 // Change the number of columns on the titanic to 34
 // I did 33 because it aligns all squares perfectly
-
-// Set the backgroundColor of each passenger by their 
-// embarked value. There are three possible values: 
-// 'S', 'C', and 'Q'
 
 
 
