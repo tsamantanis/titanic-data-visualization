@@ -9,8 +9,19 @@ const passengers = data.map(p => {
 })
 
 // Loop over each passenger and append them to the titanic
-passengers.forEach(p => {
+passengers.forEach((p, i) => {
   titanic.appendChild(p)
+  const tt = document.createElement('span');
+  tt.setAttribute('id', "tooltip-" + i)
+  tt.classList.add("tooltiptext")
+  tt.innerHTML = "Sex: " + data[i].fields.sex + ", Embarked: " + data[i].fields.embarked + ", Survived: " + data[i].fields.survived
+  p.addEventListener('mouseenter', () => {
+    tt.classList.add("show");
+  })
+  p.addEventListener('mouseleave', () => {
+    tt.classList.remove("show");
+  })
+  titanic.appendChild(tt)
 })
 
 // Let's loop over each passenger and set some styles 

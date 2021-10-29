@@ -1,10 +1,20 @@
 html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.white {
+    color: white;
+}
+
 #titanic {
     display: grid;
-    grid-template-columns: repeat(33, 15px);
-    grid-gap: 2px;
+    grid-template-columns: repeat(66, 15px);
+    /* grid-gap: 2px; */
     justify-content: center;
     align-items: center;
 }
@@ -12,6 +22,7 @@ html, body {
 #titanic div {
     width: 15px;
     height: 15px;
+    z-index: 0;
 }
 
 .male {
@@ -36,4 +47,30 @@ html, body {
 
 .Q {
     background: hsla(136, 48%, 54%, 1);
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 175px;
+    background-color: #AF2BBF;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 10px 2px 10px;
+    margin-left: 5px;
+    z-index: 1;
+}
+
+.tooltiptext::after {
+    content: "";
+    /* position: absolute; */
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #AF2BBF transparent transparent transparent;
+    z-index: 1;
+}
+    
+.show {
+    visibility: visible;
 }
