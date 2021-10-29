@@ -14,7 +14,7 @@ passengers.forEach((p, i) => {
   const tt = document.createElement('span');
   tt.setAttribute('id', "tooltip-" + i)
   tt.classList.add("tooltiptext")
-  tt.innerHTML = "Sex: " + data[i].fields.sex + ", Embarked: " + data[i].fields.embarked + ", Survived: " + data[i].fields.survived
+  tt.innerHTML = "Sex: " + data[i].fields.sex + ", Embarked: " + data[i].fields.embarked + ", Survived: " + data[i].fields.survived + ", Fare: " + data[i].fields.fare
   p.addEventListener('mouseenter', () => {
     tt.classList.add("show");
   })
@@ -24,8 +24,28 @@ passengers.forEach((p, i) => {
   titanic.appendChild(tt)
 })
 
+const normalizeProperty = (data, property) => {
+	const a = data.filter(item => typeof item.fields[property] !== "undefined").map(item => item.fields[property])
+	return a.map(item => item / Math.max(...a))
+}
+
+const filterNullForProperty = (data, property) => {
+	return data.filter(item => typeof item.fields[property] !== "undefined")
+}
+
+const sumAllProperty = (data, property) => {
+	return filterNullForProperty(data, property).map(item => item.fields[property]).reduce((acc, k) => acc + k, 0)
+}
+
+const averageFare = sumAllProperty(data, 'fare') / filterNullForProperty(data, 'fare').length
+
+const normalizedFares = normalizeProperty(data, 'fare')
+
 // Let's loop over each passenger and set some styles 
 passengers.forEach((p, i) => {
+  p.style.width = normalizedFares[i] > 0.5 ? averageFare + "px" : averageFare / 2 * (1 - normalizedFares[i]) + "px"
+  p.style.height = normalizedFares[i] > 0.5 ? averageFare + "px" : averageFare / 2 * (1 - normalizedFares[i]) + "px"
+  if (normalizedFares[i] > 0.5) p.style.marginLeft = "-" + averageFare / 4 + "px"
   p.classList.add(data[i].fields.embarked)
   p.classList.add(data[i].fields.sex)
   if (data[i].fields.survived === "No") p.classList.add("dead")

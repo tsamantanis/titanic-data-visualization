@@ -14,7 +14,7 @@ html, body {
 #titanic {
     display: grid;
     grid-template-columns: repeat(66, 15px);
-    /* grid-gap: 2px; */
+    grid-gap: 2px;
     justify-content: center;
     align-items: center;
 }
@@ -57,14 +57,14 @@ html, body {
     text-align: center;
     border-radius: 4px;
     padding: 2px 10px 2px 10px;
-    margin-left: 5px;
+    margin-left: 10px;
     z-index: 1;
 }
 
 .tooltiptext::after {
     content: "";
     /* position: absolute; */
-    margin-left: 5px;
+    margin-left: 10px;
     border-width: 5px;
     border-style: solid;
     border-color: #AF2BBF transparent transparent transparent;
