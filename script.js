@@ -3,6 +3,26 @@ import data from './titanic-data.js'
 // Get a reference to the #titanic
 const titanic = document.querySelector('#titanic')
 
+// Uncomment to sort by embarked
+// data.sort((a, b) => {
+//   if ( a.fields.embarked == b.fields.embarked ) return 0;
+//   return ( a.fields.embarked > b.fields.embarked ) ? 1 : -1;
+// })
+
+// Uncomment to sort by fare amount
+// data.sort((a, b) => a.fields.fare > b.fields.fare)
+
+// Uncomment to sort by age
+// data.sort((a, b) => a.fields.age > b.fields.age)
+
+data.sort((a, b) => {
+  if ( a.fields.survived == b.fields.survived ) return 0;
+  return ( a.fields.survived > b.fields.survived ) ? 1 : -1;
+}).sort((a, b) => {
+  if ( a.fields.sex == b.fields.sex ) return 0;
+  return ( a.fields.sex > b.fields.sex ) ? 1 : -1;
+})
+
 // Map over the data and make a new element for each passenger
 const passengers = data.map(p => {
   return document.createElement('div')
